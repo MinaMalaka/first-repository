@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate qoutes</title>
+</head>
+<style>
+    body {
+        background-color: rgba(14, 5, 86, 0.8);
+    }
+    .container {
+        text-align: center;
+        background-image: linear-gradient(red, blue);
+        color: white;
+        width: 70%;
+        height: 55vh;
+        margin: auto;
+        padding: 20px;
+        position: relative;
+        box-shadow: 0px 0px 15px yellow inset ;
+        border-radius: 20px;   
+    }
+    h1 , p , button , div{
+        text-shadow: 0 0 10px yellow;
+    }
+    button {
+        padding: 20px 50px;
+        margin-bottom: 10px;
+        background-color: rgb(29, 29, 163);
+        cursor: pointer;
+        transition: all .5s;
+        color: white;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px yellow inset;
+
+    }
+    button:hover {
+        background-color: rgb(57, 190, 57);
+
+    }
+    .rotate {
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        letter-spacing: 10px;
+        font-size: 20px;
+        font-weight: 900;
+        color: blue;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        animation: show 1s infinite;
+    }
+    .blue {
+        color: blue;
+        
+    }
+    .yellow {
+        color: yellow;
+    }
+    .green {
+        color: green;
+    }
+    .red {
+        color: red;
+    }
+    .other {
+        color:aqua
+    }
+    @keyframes show {
+        0% {
+            opacity: 0;
+        }
+        25% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 1;
+        }
+        75% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+        
+    }
+
+    
+</style>
+
+<body>
+    
+    <div class="container">
+        <h1>Quote of the Day</h1>
+        <p>Press the button below to recieve a random quote!</p>
+        <button id="generator" onclick="generator()">New quote</button>
+        <p class="rotate"><span class="blue">q</span><span class="yellow">o</span><span class="green">u</span><span
+                class="red">t</span><span class="other">e</span><x/p>
+        <div id="qoutes"></div>
+   
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
